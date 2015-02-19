@@ -5,8 +5,9 @@ namespace Nancy.ErrorHandling
     using System.IO;
     using System.Linq;
     using System.Text;
-    using IO;
+
     using Nancy.Extensions;
+    using Nancy.IO;
 
     /// <summary>
     /// Default error handler

@@ -1,7 +1,8 @@
 namespace Nancy.Json
 {
     using System.Collections.Generic;
-    using Converters;
+
+    using Nancy.Json.Converters;
 
     /// <summary>
     /// Json serializer settings

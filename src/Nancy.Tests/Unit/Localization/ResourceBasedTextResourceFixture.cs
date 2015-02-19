@@ -1,8 +1,10 @@
 ﻿namespace Nancy.Tests.Unit.Localization
 {
     using FakeItEasy;
-    using Xunit;
+
     using Nancy.Localization;
+
+    using Xunit;
 
     public class ResourceBasedTextResourceFixture
     {

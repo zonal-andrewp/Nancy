@@ -2,18 +2,15 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
     using System.Threading;
     using System.Threading.Tasks;
 
-    using Bootstrapper;
-
+    using Nancy.Bootstrapper;
     using Nancy.Cookies;
     using Nancy.Diagnostics;
     using Nancy.ErrorHandling;
-    using Nancy.Routing;
-
     using Nancy.Helpers;
+    using Nancy.Routing;
 
     /// <summary>
     /// Default engine for handling Nancy <see cref="Request"/>s.

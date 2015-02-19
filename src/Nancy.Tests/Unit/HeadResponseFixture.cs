@@ -1,7 +1,9 @@
 namespace Nancy.Tests.Unit
 {
     using System.Collections.Generic;
-    using Tests.Extensions;
+
+    using Nancy.Tests.Extensions;
+
     using Xunit;
 
     public class HeadResponseFixture

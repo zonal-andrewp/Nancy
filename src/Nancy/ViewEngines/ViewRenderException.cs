@@ -1,8 +1,8 @@
 namespace Nancy.ViewEngines.Razor
 {
-	using System;
+    using System;
 
-	/// <summary>
+    /// <summary>
 	/// An exception that indicates the view could not be rendered
 	/// </summary>
 	public class ViewRenderException : Exception

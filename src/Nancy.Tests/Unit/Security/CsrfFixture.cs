@@ -2,6 +2,7 @@
 {
     using System.Linq;
     using System.Threading;
+
     using FakeItEasy;
 
     using Nancy.Bootstrapper;

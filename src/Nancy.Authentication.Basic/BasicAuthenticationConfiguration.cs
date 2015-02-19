@@ -1,7 +1,7 @@
 ﻿namespace Nancy.Authentication.Basic
 {
     using System;
-    
+
     /// <summary>
 	/// Configuration options for forms authentication
 	/// </summary>
@@ -13,7 +13,7 @@
 		/// <param name="userValidator">A valid instance of <see cref="IUserValidator"/> class</param>
 		/// <param name="realm">Basic authentication realm</param>
         /// <param name="userPromptBehaviour">Control when the browser should be instructed to prompt for credentials</param>
-        public BasicAuthenticationConfiguration(IUserValidator userValidator, string realm, UserPromptBehaviour userPromptBehaviour = Basic.UserPromptBehaviour.NonAjax)
+        public BasicAuthenticationConfiguration(IUserValidator userValidator, string realm, UserPromptBehaviour userPromptBehaviour = UserPromptBehaviour.NonAjax)
         {
 			if (userValidator == null)
 			{

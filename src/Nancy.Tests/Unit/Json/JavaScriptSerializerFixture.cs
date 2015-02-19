@@ -1,16 +1,13 @@
 ﻿namespace Nancy.Tests.Unit.Json
 {
-	using System;
-	using System.Collections.Generic;
-	using System.IO;
-	using FakeItEasy;
-	using Nancy.IO;
-	using Nancy.Json;
-	using Xunit;
-	using Xunit.Extensions;
-	using Xunit.Sdk;
+    using System;
 
-	public class JavaScriptSerializerFixture
+    using Nancy.Json;
+
+    using Xunit;
+    using Xunit.Sdk;
+
+    public class JavaScriptSerializerFixture
 	{
 		[Fact]
 		public void Should_register_converters_when_asked()

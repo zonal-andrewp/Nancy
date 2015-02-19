@@ -4,8 +4,8 @@
     using System.IO;
     using System.Linq;
 
-    using Nancy.Json;
     using Nancy.Bootstrapper;
+    using Nancy.Json;
 
     public static class Jsonp
     {
@@ -45,7 +45,7 @@
         /// <param name="context">Current Nancy Context</param>
         private static void PrepareJsonp(NancyContext context)
         {
-            bool isJson = Nancy.Json.Json.IsJsonContentType(context.Response.ContentType);
+            bool isJson = Json.Json.IsJsonContentType(context.Response.ContentType);
             bool hasCallback = context.Request.Query["callback"].HasValue;
 
             if (isJson && hasCallback)
