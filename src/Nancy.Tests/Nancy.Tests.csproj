@@ -88,7 +88,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FakeItEasy">
+    <Reference Include="FakeItEasy, Version=1.19.0.0, Culture=neutral, PublicKeyToken=eff28e2146d5fd2c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\FakeItEasy.1.19.0\lib\net40\FakeItEasy.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp">
@@ -313,9 +314,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
@@ -337,7 +335,9 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
