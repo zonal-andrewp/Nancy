@@ -5,12 +5,12 @@ namespace Nancy
     using System.Collections.Specialized;
     using System.IO;
     using System.Linq;
-    using System.Text.RegularExpressions;
     using System.Security.Cryptography.X509Certificates;
+    using System.Text.RegularExpressions;
 
-    using IO;
     using Nancy.Extensions;
-    using Session;
+    using Nancy.IO;
+    using Nancy.Session;
 
     /// <summary>
     /// Encapsulates HTTP-request information to an Nancy application.

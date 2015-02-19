@@ -2,7 +2,9 @@ namespace Nancy.Tests.Unit.ErrorHandling
 {
     using System;
     using System.IO;
+
     using Nancy.ErrorHandling;
+
     using Xunit;
     using Xunit.Extensions;
 

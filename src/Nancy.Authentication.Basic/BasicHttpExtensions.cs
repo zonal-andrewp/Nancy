@@ -1,7 +1,7 @@
 ﻿namespace Nancy.Authentication.Basic
 {
     using Nancy.Bootstrapper;
-    
+
     /// <summary>
 	/// Some simple helpers give some nice authentication syntax in the modules.
 	/// </summary>

@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-namespace Nancy.Authentication.Basic
+﻿namespace Nancy.Authentication.Basic
 {
     using Nancy.Security;
 
-	/// <summary>
+    /// <summary>
 	/// Provides a way to validate the username and password
 	/// </summary>
 	public interface IUserValidator

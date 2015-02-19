@@ -5,8 +5,11 @@ namespace Nancy.Tests.Unit
     using System.IO;
     using System.Linq;
     using System.Text;
+
     using FakeItEasy;
+
     using Nancy.IO;
+
     using Xunit;
     using Xunit.Extensions;
 

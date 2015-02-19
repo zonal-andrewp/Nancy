@@ -1,8 +1,9 @@
 ﻿namespace Nancy.Security
 {
     using System;
-    using Cookies;
+
     using Nancy.Bootstrapper;
+    using Nancy.Cookies;
     using Nancy.Cryptography;
     using Nancy.Helpers;
 

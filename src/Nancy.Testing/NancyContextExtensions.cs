@@ -1,10 +1,11 @@
 
 namespace Nancy.Testing
 {
-	using System;
-	using System.IO;
-	using System.Xml.Serialization;
-	using Nancy.Json;
+    using System;
+    using System.IO;
+    using System.Xml.Serialization;
+
+    using Nancy.Json;
 
     /// <summary>
     /// Defines extensions for the <see cref="NancyContext"/> type.

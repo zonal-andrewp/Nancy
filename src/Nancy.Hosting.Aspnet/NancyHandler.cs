@@ -6,8 +6,9 @@ namespace Nancy.Hosting.Aspnet
     using System.Linq;
     using System.Threading.Tasks;
     using System.Web;
-    using IO;
+
     using Nancy.Extensions;
+    using Nancy.IO;
 
     /// <summary>
     /// Bridges the communication between Nancy and ASP.NET based hosting.
@@ -61,7 +62,7 @@ namespace Nancy.Hosting.Aspnet
             var nancyContext = task.Result.Item1;
             var httpContext = task.Result.Item2;
 
-            NancyHandler.SetNancyResponseToHttpResponse(httpContext, nancyContext.Response);
+            SetNancyResponseToHttpResponse(httpContext, nancyContext.Response);
             nancyContext.Dispose();
         }
 
