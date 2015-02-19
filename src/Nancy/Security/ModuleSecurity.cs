@@ -1,7 +1,6 @@
 namespace Nancy.Security
 {
     using System;
-    using System.Collections.Generic;
     using System.Security.Claims;
 
     using Nancy.Extensions;
@@ -41,17 +40,6 @@ namespace Nancy.Security
         {
             module.AddBeforeHookOrExecute(SecurityHooks.RequiresAuthentication(), "Requires Authentication");
             module.AddBeforeHookOrExecute(SecurityHooks.RequiresAnyClaim(requiredClaims), "Requires Any Claim");
-        }
-
-        /// <summary>
-        /// This module requires claims to be validated
-        /// </summary>
-        /// <param name="module">Module to enable</param>
-        /// <param name="isValid">Claims validator</param>
-        public static void RequiresValidatedClaims(this INancyModule module, Func<IEnumerable<Claim>, bool> isValid)
-        {
-            module.AddBeforeHookOrExecute(SecurityHooks.RequiresAuthentication(), "Requires Authentication");
-            module.AddBeforeHookOrExecute(SecurityHooks.RequiresValidatedClaims(isValid), "Requires Validated Claim");
         }
 
         /// <summary>
