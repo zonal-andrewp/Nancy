@@ -16,7 +16,7 @@
     "Nancy.ViewEngines.Spark": "1.0.0-*"
 
   },
-    "compileFiles": [ "../Nancy.Tests/ShouldExtensions.cs" ],
+    "compileFiles": [ "../Nancy.Tests/ShouldExtensions.cs","../SharedAssemblyInfo.cs" ],
   "frameworks": {
     "dnx451": {
       "frameworkAssemblies": { "System.Xml": "" }
