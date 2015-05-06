@@ -9,7 +9,7 @@
   "dependencies": {
 
   },
-
+  "compileFiles": [ "../SharedAssemblyInfo.cs" ],
   "frameworks": {
     "dnx451": {
       "frameworkAssemblies": { "System.Xml": "" }

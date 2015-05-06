@@ -6,15 +6,17 @@
     "projectUrl": "",
     "licenseUrl": "",
 
-    "dependencies": {
-        "Nancy": "1.0.0-*",
-        "xunit.runner.visualstudio": "2.0.0",
-        "xunit.extensions": "1.9.1",
-        "xunit": "1.9.1",
-        "FakeItEasy": "1.19.0",
-        "Nancy.Testing": "1.0.0-*"
+  "dependencies": {
+    "Nancy": "1.0.0-*",
+    "xunit.runner.visualstudio": "2.0.0",
+    "xunit.extensions": "1.9.1",
+    "xunit": "1.9.1",
+    "FakeItEasy": "1.19.0",
+    "Nancy.Testing": "1.0.0-*"
 
-    },
+  },
+
+ "compileFiles": [ "../SharedAssemblyInfo.cs" ],
 
     "frameworks": {
         "dnx451": {
