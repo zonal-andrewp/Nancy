@@ -14,7 +14,7 @@
     "MarkdownSharp": "1.13.0"
 
   },
-  "compileFiles": [ "../Nancy.Tests/ShouldExtensions.cs", "../SharedAssemblyInfo.cs" ],
+ "compileFiles": [ "../Nancy.Tests/ShouldExtensions.cs", "../SharedAssemblyInfo.cs" ],
   "frameworks": {
     "dnx451": {
       "frameworkAssemblies": { "System.Xml": "" }
