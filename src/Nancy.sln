@@ -96,6 +96,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Nancy.Demo.Async", "Nancy.D
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Nancy.Demo.Authentication", "Nancy.Demo.Authentication\Nancy.Demo.Authentication.xproj", "{51D98B95-9932-4082-83F6-5B2BE9072970}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Nancy.Demo.Authentication.Basic", "Nancy.Demo.Authentication.Basic\Nancy.Demo.Authentication.Basic.xproj", "{A51BA104-9552-488C-B5A7-01B35E0516E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -432,6 +434,14 @@ Global
 		{51D98B95-9932-4082-83F6-5B2BE9072970}.MonoRelease|Any CPU.Build.0 = Release|Any CPU
 		{51D98B95-9932-4082-83F6-5B2BE9072970}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51D98B95-9932-4082-83F6-5B2BE9072970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A51BA104-9552-488C-B5A7-01B35E0516E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A51BA104-9552-488C-B5A7-01B35E0516E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A51BA104-9552-488C-B5A7-01B35E0516E0}.MonoDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A51BA104-9552-488C-B5A7-01B35E0516E0}.MonoDebug|Any CPU.Build.0 = Debug|Any CPU
+		{A51BA104-9552-488C-B5A7-01B35E0516E0}.MonoRelease|Any CPU.ActiveCfg = Release|Any CPU
+		{A51BA104-9552-488C-B5A7-01B35E0516E0}.MonoRelease|Any CPU.Build.0 = Release|Any CPU
+		{A51BA104-9552-488C-B5A7-01B35E0516E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A51BA104-9552-488C-B5A7-01B35E0516E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -478,6 +488,7 @@ Global
 		{7FE05D04-C797-4960-A89F-F04B14491A45} = {C5F77437-CDD3-49DB-BE2F-97B9AFAD4809}
 		{CE1C8C96-2CD8-4EAF-B4D4-7FCC308F0F22} = {913E80D6-6EE0-47BC-B3B6-0D0A769B461A}
 		{51D98B95-9932-4082-83F6-5B2BE9072970} = {913E80D6-6EE0-47BC-B3B6-0D0A769B461A}
+		{A51BA104-9552-488C-B5A7-01B35E0516E0} = {913E80D6-6EE0-47BC-B3B6-0D0A769B461A}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Nancy.Demo.Hosting.Aspnet\Nancy.Demo.Hosting.Aspnet.csproj
