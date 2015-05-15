@@ -6,12 +6,13 @@
     "projectUrl": "",
     "licenseUrl": "",
 
-    "dependencies": {
-        "Nancy": "1.0.0-*",
-        "Nancy.Hosting.Self": "1.0.0-*",
+  "dependencies": {
+    "Nancy": "1.0.0-*",
+    "Nancy.Hosting.Self": "1.0.0-*",
 
 
-    },
+  },
+  "commands": { "web": "Nancy.Demo.Hosting.Self" },
     "compileFiles": [ ],
     "frameworks": {
         "dnx451": {
