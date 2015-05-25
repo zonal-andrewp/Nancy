@@ -245,6 +245,8 @@
 
             this.ConfigureApplicationContainer(this.ApplicationContainer);
 
+            AppDomainAssemblyTypeScanner.UpdateTypes();
+
             var typeRegistrations = this.InternalConfiguration.GetTypeRegistations()
                                         .Concat(this.GetAdditionalTypes());
 
