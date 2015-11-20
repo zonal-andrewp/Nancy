@@ -66,6 +66,27 @@ namespace Nancy.Tests.Unit
             request.Method.ShouldEqual("GET");
         }
 
+		[Fact]
+        public void Should_override_lowercase_request_method_on_post()
+        {
+            // Given
+            const string bodyContent = "_method=get";
+            var memory = CreateRequestStream();
+            var writer = new StreamWriter(memory);
+            writer.Write(bodyContent);
+            writer.Flush();
+            memory.Position = 0;
+
+            var headers =
+                new Dictionary<string, IEnumerable<string>> { { "content-type", new[] { "application/x-www-form-urlencoded" } } };
+
+            // When
+            var request = new Request("POST", new Url { Path = "/", Scheme = "http" }, memory, headers);
+
+            // Then
+            request.Method.ShouldEqual("GET");
+        }
+
         [Theory]
         [InlineData("GET")]
         [InlineData("PUT")]

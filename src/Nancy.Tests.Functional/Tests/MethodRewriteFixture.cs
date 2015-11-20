@@ -91,6 +91,17 @@ namespace Nancy.Tests.Functional.Tests
                 with.Header("X-HTTP-Method-Override", "DELETE");
             }));
         }
+
+		[Fact]
+        public void Should_rewrite_method_when_lowercase_method_form_input_is_provided()
+        {
+            var response = this.browser.Post("/", with =>
+            {
+                with.FormValue("_method", "delete");
+            });
+
+            Assert.Equal("Delete route", response.Body.AsString());
+        }
     }
 
     public class MethodRewriteModule : NancyModule
