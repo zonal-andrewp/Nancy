@@ -293,9 +293,9 @@ namespace Nancy
             var overrides =
                 new List<Tuple<string, string>>
                 {
-                    Tuple.Create("_method form input element", (string)this.Form["_method"]),
-                    Tuple.Create("X-HTTP-Method-Override form input element", (string)this.Form["X-HTTP-Method-Override"]),
-                    Tuple.Create("X-HTTP-Method-Override header", this.Headers["X-HTTP-Method-Override"].FirstOrDefault())
+                    Tuple.Create("_method form input element", (string)this.Form["_method"].ToUpper()),
+                    Tuple.Create("X-HTTP-Method-Override form input element", (string)this.Form["X-HTTP-Method-Override"].ToUpper()),
+                    Tuple.Create("X-HTTP-Method-Override header", this.Headers["X-HTTP-Method-Override"].FirstOrDefault().ToUpper)
                 };
 
             var providedOverride =
